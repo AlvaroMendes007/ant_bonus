@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/fonts/ft_num_bonus_win.fnt" type="BitmapFont" id=1]
+[ext_resource path="res://scripts/HUD.gd" type="Script" id=2]
+
+[node name="HUD_pontuacao" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="ponto1" type="Node2D" parent="."]
+position = Vector2( 8.98981, 8.98984 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="pontuacao1" type="Label" parent="ponto1"]
+anchor_right = 0.898
+margin_left = 24.2013
+margin_top = -27.9126
+margin_right = 172.201
+margin_bottom = 160.087
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.956863, 0.188235, 0.184314, 1 )
+custom_constants/shadow_offset_x = 0
+text = "400"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ponto2" type="Node2D" parent="."]
+position = Vector2( 40.4545, 30 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="pontuacao2" type="Label" parent="ponto2"]
+margin_left = 19.0
+margin_top = 71.0
+margin_right = 146.0
+margin_bottom = 117.0
+custom_fonts/font = ExtResource( 1 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
